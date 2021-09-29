@@ -64,6 +64,8 @@ const MainCalc = () => {
       <div className="results">
         <AccountResults valores={valores} reset={handleReset} />
       </div>
+
+    
     </main>
   );
 };
