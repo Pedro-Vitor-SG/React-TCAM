@@ -1,0 +1,50 @@
+.section_container {
+  margin-bottom: 30px;
+}
+
+.section_container p {
+  color: hsl(186, 14%, 43%);
+  margin-bottom: 5px;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.section_container .account_container {
+  display: flex;
+  align-items: center;
+}
+.section_container .account_container img {
+  position: absolute;
+  margin-left: 15px;
+  width: 10px;
+}
+.section_container .account_container input {
+  border: 2px solid #fff;
+  color: hsl(183, 100%, 15%);
+  width: 90%;
+  height: 100%;
+  font-size: 1.3rem;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  padding-right: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.section_container .account_container input:hover,
+.section_container .account_container input:focus {
+  cursor: pointer;
+  border: 2px solid hsl(172, 67%, 45%);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .section_container  {
+    margin-bottom: 20px;
+  }
+  
+  .section_container .account_container input {
+    width: 100%;
+  }
+}

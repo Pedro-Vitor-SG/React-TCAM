@@ -1,0 +1,52 @@
+.container_people {
+  margin: 40px 0px;
+}
+.container_people .texts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container_people .texts p {
+  color: hsl(186, 14%, 43%);
+  margin-bottom: 5px;
+  margin-right: 30px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.container_people .texts p.red{
+  color: red;
+  font: 0.7rem;
+}
+.container_people .container_inputNumberPeople {
+    display: flex;
+    align-items: center;
+}
+.container_people .container_inputNumberPeople img {
+  position: absolute;
+  margin-left: 15px;
+  width: 10px;
+}
+.container_people .container_inputNumberPeople input {
+    border: 2px solid #fff;
+    color: hsl(183, 100%, 15%);
+    width: 90%;
+    height: 100%;
+    font-size: 1.3rem;
+    text-align: right;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    padding-right: 15px;
+    outline: none;
+    transition: 0.2s;
+  }
+ .container_people .container_inputNumberPeople input:hover, .container_people .container_inputNumberPeople:focus {
+    cursor: pointer;
+    border: 2px solid hsl(172, 67%, 45%);
+    border-radius: 5px;
+ } 
+
+ @media screen and (max-width: 767px)  {
+  .container_people .container_inputNumberPeople input {
+    width: 100%;
+  }
+}

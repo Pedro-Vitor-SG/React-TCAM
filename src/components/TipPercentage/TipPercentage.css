@@ -1,0 +1,64 @@
+.container_percentage p {
+  color: hsl(186, 14%, 43%);
+  margin-bottom: 5px;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.container_percentage .container_choice {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container_percentage button,
+.container_percentage .container_choice input {
+  font-family: "Space Mono", monospace;
+  font-size: 1.1rem;
+  width: 28%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.container_percentage .container_choice button {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+}
+.container_percentage .container_choice button:hover {
+  background-color: hsl(172, 61%, 73%);
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  cursor: pointer;
+}
+.container_percentage .container_choice button:focus {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+.container_percentage .container_choice input {
+  border: 2px solid #fff;
+  color: hsl(183, 100%, 15%);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: right;
+  outline: none;
+  transition: 0.2s;
+}
+
+.container_percentage .container_choice input:focus,
+.container_percentage .container_choice input:hover {
+  cursor: pointer;
+  border: 2px solid hsl(172, 67%, 45%);
+  border-radius: 5px;
+}
+
+.container_choice input::placeholder {
+  color: hsl(186, 14%, 43%);
+}
+
+@media screen and (max-width: 767px)  {
+  .container_percentage button,
+  .container_percentage .container_choice input {
+    width: 45%;
+  }
+}
